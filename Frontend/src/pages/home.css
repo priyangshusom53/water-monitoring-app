@@ -1,0 +1,83 @@
+/* full-viewport flex centering */
+.home-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   margin: 0;
+   background: linear-gradient(135deg, #6b46c1, #5a67d8);
+   text-align: center;
+}
+
+/* big white headline */
+.home-title {
+   font-size: 3rem;
+   /* ~48px */
+   font-weight: 800;
+   color: #fff;
+   margin-bottom: 1.5rem;
+}
+
+/* button container */
+.home-buttons {
+   display: flex;
+   gap: 1rem;
+}
+
+/* base button styles */
+.btn {
+   display: inline-block;
+   padding: 0.75rem 1.5rem;
+   font-size: 1rem;
+   font-weight: 600;
+   text-decoration: none;
+   border-radius: 0.5rem;
+   transition: background 0.2s, color 0.2s;
+}
+
+/* primary button (white on purple) */
+.btn-primary {
+   background: #fff;
+   color: #6b46c1;
+   border: 2px solid transparent;
+}
+
+.btn-primary:hover {
+   background: #f7fafc;
+}
+
+/* secondary button (outline) */
+.btn-secondary {
+   background: transparent;
+   color: #fff;
+   border: 2px solid #fff;
+}
+
+.btn-secondary:hover {
+   background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive scaling */
+@media (min-width: 768px) {
+   .home-title {
+      font-size: 4rem;
+      /* ~64px */
+   }
+
+   .btn {
+      font-size: 1.125rem;
+      padding: 1rem 2rem;
+   }
+}
+
+/* src/pages/Home.css */
+.home-icon {
+   width: 150px;
+   height: auto;
+   margin-bottom: 1rem;
+}
+
+.home-container {
+   font-family: 'Roboto', sans-serif;
+}
