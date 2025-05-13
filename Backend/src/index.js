@@ -2,7 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import path from 'path'
 import authRoutes from './routes/auth.route.js'
-import meterRoutes from './routes/meter.route.js'
+//import meterRoutes from './routes/meter.route.js'
 import { connectDB } from './lib/db.js'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
@@ -60,7 +60,7 @@ app.use(cors({
    credentials: true,
 }))
 app.use("/api/auth", authRoutes)
-app.use("/api/meter", meterRoutes)
+//app.use("/api/meter", meterRoutes)
 
 app.get('/', (req, res) => {
    res.send('Home Page')
