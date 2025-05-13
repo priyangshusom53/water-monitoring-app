@@ -76,3 +76,4 @@ export const useAuthStore = create((set, get) => ({
 
    },
 }))
+// useAuthStore.persist = persist(
